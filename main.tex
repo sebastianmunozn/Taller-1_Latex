@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{listings}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{cite}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Nociones de la memoria del computador}
+            
+        \vspace{0.5cm}
+        \LARGE
+        Taller
+            
+        \vspace{1.5cm}
+            
+        \textbf{Sebastian muñoz noreña}
+            
+        \vfill
+            
+        \vspace{0.8cm}
+            
+        \Large
+        Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
+        Universidad de Antioquia\\
+        Medellín\\
+        Septiembre de 2020
+            
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+\pagebreak
+\begin{center}
+    
+
+\section{Introducción}\end{center}
+A continuación se dará a conocer una breve definición de algunos tipos de memorias y a su vez se intentará dar una breve explicación de su funcionamiento en un computador. Todo esto con el fin de dar a entender el funcionamiento de las memorias de una manera simple.
+
+\pagebreak
+
+
+\section{Contenido} 
+    \subsection{Defina que es la memoria del computador}
+         \begin{itemize} \item{}
+        la memoria es el dispositivo que almacena la información por un periodo de tiempo, esta información va a ser utilizada posteriormente por los microprocesadores para tratarla y entregar resultados.\cite{Referencia}
+        \end{itemize} 
+\subsection{Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo.}
+        \begin{itemize} 
+        \item{}
+        ROM:( Read only memory). Utilizada para dar arranque a la BIOS, lo que es básicamente instrucciones para el arranque del computador.\cite{tiposdememoria}
+
+        \item{}RAM: (Random access memory). Es la más importante, ya que el computador no funcionaría sin ella. Ésta guarda procesos, instrucciones que posibilitan el funcionamiento de las aplicaciones instaladas. Por esto es frecuentemente usada por el microprocesador.\cite{Referencia}\cite{tiposdememoria}
+        
+        \item{}CACHE: Guarda distintas direcciones que son utilizadas por la memoria RAM para realizar diferentes funciones. Guarda las ubicaciones en el disco que ocupan los programas que han sido ejecutados, para que cuando vuelvan a ser iniciados el acceso a la aplicación sea más rápido. Existen tres tipos diferentes: L1, L2, L3. L1 es más rápida y se encuentra dentro de los núcleos del microprocesador, L2 es más lenta pero con mayor capacidad que L1, L3 es la más lenta de las 3, pero la que mayor capacidad posee.\cite{tiposdememoria} \cite{Referencia}
+        
+        \item{}VRAM: Cumple una function similar a la memoria RAM, pero en este caso trabaja de la mano del GPU.\cite{vram}
+        
+        \item{}FLASH: es una clase de chip que se emplea para el almacenamiento y el traslado de datos. Se trata de una evolución de la EEPROM (Electrically Erasable Programmable Read-Only Memory), es decir, una clase de memoria ROM (de solo lectura) que puede programarse, reprogramarse y borrarse electrónicamente.\cite{tiposdememoria}
+        
+        \item{}DRAM: (Dynamyc Random Acces Memory). Es un tipo de memoria RAM de menor velocidad.\cite{tiposdememoria}
+        
+        \item{}VIRTUAL: Es una porción del disco duro dedicada exclusivamente a "sostener" temporalmente los pedazos de los programas y datos en ejecución que se utilizan menos o que ocupan espacio innecesario. \cite{Referencia}
+        \end{itemize}
+\subsection{Describa la manera como se gestiona la memoria en un computador.}
+    \begin{itemize} \item{}
+    por medio de un dispositivo de entrada el computador recibe una serie de pulsos electromagnéticos que llegan hasta la memoria, ocupando temporalmente un espacio, después el microprocesador lee estas órdenes y las ejecuta. Después de ejecutadas estas órdenes se eliminan tanto de la memoria como del procesador. La memoria también puede almacenar temporalmente aplicaciones para poder que el procesador pueda trabajar con ellas, llevando y trayendo pedazos de información repetidamente.\cite{Referencia}
+    \end{itemize}
+
+\subsection{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
+    \begin{itemize} 
+    \item{}la velocidad de una memoria está dada por los megahercios(MHz) esta frecuencia representa la velocidad con la que la información se mueve a los demás componentes.\cite{graficas}
+    \item{}es importante ya que la velocidad de la memoria determina la velocidad a la que el procesador puede procesar los datos. \cite{graficas}
+    \end{itemize}
+\pagebreak
+
+
+
+\begin{center}
+    
+
+\section{Conclusión} \label{conclulsion} \end{center}
+\subsection{}
+Un computador posee más de una memoria. Principalmente una memoria RAM que se apoya en los demás tipos de memoria (DRAM, CACHE, etc.) para hacer más eficiente el procesamiento y la comunicación con el procesador. A su vez también vimos un tipo de memoria de video (VRAM) que no se comunica directamente con el microprocesador sino con un procesador de gráficos (GPU), un tipo de memoria que está en el disco duro(VIRTUAL), una que se encarga del arranque del computador (ROM), entre otras.
+\newline
+Podemos concluir entonces que las tareas o instrucciones que ejecuta una memoria no dependen únicamente de ella sino de todo un sistema.
+
+
+\pagebreak
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\label{graficas}
+
+\end{document}
