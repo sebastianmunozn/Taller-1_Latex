@@ -42,7 +42,7 @@
     
 
 \section{Introducción}\end{center}
-A continuación se dará a conocer una breve definición de algunos tipos de memorias y a su vez se intentará dar una breve explicación de su funcionamiento en un computador. Todo esto con el fin de dar a entender el funcionamiento de las memorias de una manera simple.
+A continuación se dará a conocer una breve definición de algunos tipos de memorias y a su vez se intentará dar una breve explicación de su funcionamiento en un computador. Todo esto con el fin de dar a entender el funcionamiento de la memoria de una manera más simple.
 
 \pagebreak
 
@@ -50,28 +50,29 @@ A continuación se dará a conocer una breve definición de algunos tipos de mem
 \section{Contenido} 
     \subsection{Defina que es la memoria del computador}
          \begin{itemize} \item{}
-        la memoria es el dispositivo que almacena la información por un periodo de tiempo, esta información va a ser utilizada posteriormente por los microprocesadores para tratarla y entregar resultados.\cite{Referencia}
+        La memoria es uno de los componentes fundamentales de un computador, ésta trabaja en conjunto con el microprocesador. El dispositivo almacena datos por un periodo de tiempo, dichos datos van a ser utilizados posteriormente por el microprocesador para tratarlos y entregar resultados a las tareas pedidas.\cite{Referencia}
         \end{itemize} 
 \subsection{Mencione los tipos de memoria que conoce y haga una pequeña descripción de cada tipo.}
         \begin{itemize} 
         \item{}
-        ROM:( Read only memory). Utilizada para dar arranque a la BIOS, lo que es básicamente instrucciones para el arranque del computador.\cite{tiposdememoria}
+        ROM:( Read only memory). Utilizada para dar arranque a la BIOS, lo que es básicamente instrucciones para el arranque del computador. Es una memoria de solo lectura, y guarda datos permanentemente, lo que significa que no se borrará la información al des energizarse, es un tipo de memoria no volátil. \cite{tiposdememoria} \cite{profesionalrivew}
 
-        \item{}RAM: (Random access memory). Es la más importante, ya que el computador no funcionaría sin ella. Ésta guarda procesos, instrucciones que posibilitan el funcionamiento de las aplicaciones instaladas. Por esto es frecuentemente usada por el microprocesador.\cite{Referencia}\cite{tiposdememoria}
+        \item{}RAM: Es la memoria de acceso aleatorio (Random Access Memory). Es la más importante, ya que el computador no funcionaría sin ella. En la RAM se cargan todas las instrucciones que ejecuta el procesador, además de otras unidades. Es de acceso aleatorio, porque puede leer o escribir en una posición de memoria. Ésta guarda procesos, instrucciones que posibilitan el funcionamiento de las aplicaciones instaladas.\cite{Referencia}\cite{tiposdememoria} \cite{profesionalrivew}
         
-        \item{}CACHE: Guarda distintas direcciones que son utilizadas por la memoria RAM para realizar diferentes funciones. Guarda las ubicaciones en el disco que ocupan los programas que han sido ejecutados, para que cuando vuelvan a ser iniciados el acceso a la aplicación sea más rápido. Existen tres tipos diferentes: L1, L2, L3. L1 es más rápida y se encuentra dentro de los núcleos del microprocesador, L2 es más lenta pero con mayor capacidad que L1, L3 es la más lenta de las 3, pero la que mayor capacidad posee.\cite{tiposdememoria} \cite{Referencia}
+        \item{}CACHE: La caché es una memoria que se sitúa entre la unidad central de procesamiento (CPU) y la memoria de acceso aleatorio (RAM) para acelerar el intercambio de datos. Funciona de manera semejante a la memoria RAM, pero es de menor tamaño y de acceso más rápido. Se puede decir que es una memoria auxiliar, que posee una gran velocidad y eficiencia y es usada por el microprocesador para reducir el tiempo de acceso a datos ubicados en la memoria RAM que se utilizan con más frecuencia. Existen tres tipos diferentes: L1, L2, L3. L1 es más rápida y se encuentra dentro de los núcleos del microprocesador, L2 es más lenta pero con mayor capacidad que L1, L3 es la más lenta de las tres, pero la que mayor capacidad posee.\cite{tiposdememoria} \cite{Referencia} \cite{cache}
         
-        \item{}VRAM: Cumple una function similar a la memoria RAM, pero en este caso trabaja de la mano del GPU.\cite{vram}
+        \item{}VRAM: Cumple una function similar a la memoria RAM, pero en este caso trabaja de la mano del GPU para poder manejar toda la información visual que le envía el microprocesador. La principal característica de esta clase de memoria es que es accesible de forma simultánea por dos dispositivos. De esta manera, es posible que la CPU grabe información en ella, mientras se leen los datos que serán visualizados en el monitor en cada momento.\cite{vram} \cite{vram_wiki}
         
         \item{}FLASH: es una clase de chip que se emplea para el almacenamiento y el traslado de datos. Se trata de una evolución de la EEPROM (Electrically Erasable Programmable Read-Only Memory), es decir, una clase de memoria ROM (de solo lectura) que puede programarse, reprogramarse y borrarse electrónicamente.\cite{tiposdememoria}
         
-        \item{}DRAM: (Dynamyc Random Acces Memory). Es un tipo de memoria RAM de menor velocidad.\cite{tiposdememoria}
         
-        \item{}VIRTUAL: Es una porción del disco duro dedicada exclusivamente a "sostener" temporalmente los pedazos de los programas y datos en ejecución que se utilizan menos o que ocupan espacio innecesario. \cite{Referencia}
+        \item{}VIRTUAL: Es una porción del disco duro dedicada exclusivamente a "sostener" temporalmente los pedazos de los programas y datos en ejecución que se utilizan menos o que ocupan espacio innecesario. Si la memoria RAM está saturada la memoria virtual pasa a compensar para ejecutar las operaciones completar\cite{Referencia}
         \end{itemize}
 \subsection{Describa la manera como se gestiona la memoria en un computador.}
     \begin{itemize} \item{}
-    por medio de un dispositivo de entrada el computador recibe una serie de pulsos electromagnéticos que llegan hasta la memoria, ocupando temporalmente un espacio, después el microprocesador lee estas órdenes y las ejecuta. Después de ejecutadas estas órdenes se eliminan tanto de la memoria como del procesador. La memoria también puede almacenar temporalmente aplicaciones para poder que el procesador pueda trabajar con ellas, llevando y trayendo pedazos de información repetidamente.\cite{Referencia}
+    Los procesos son ejecutados principalmente por el procesador, después deben llevarse a la memoria para ser ejecutados.
+    La administración de memoria consta de distintos métodos para obtener la mejor utilidad de la memoria ordenando la información de manera que se aproveche el espacio disponible. Los métodos pueden ser de partición fija (que es la división de la memoria libre en varias partes), o partición dinámica (que son las particiones de la memoria en tamaños que pueden ser variables, según la cantidad de memoria que se necesita).\cite{admin_memoria}
+    \cite{Referencia}
     \end{itemize}
 
 \subsection{¿Qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
